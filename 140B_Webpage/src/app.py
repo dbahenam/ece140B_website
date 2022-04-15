@@ -27,5 +27,5 @@ if __name__ == '__main__':
 
        # Create an app with the configuration specified above
        app = config.make_wsgi_app()
-   server = make_server('0.0.0.0', 6543, app) # Start the application on port 6543
+   server = make_server('0.0.0.0', 6000, app) # Start the application on port 6543
    server.serve_forever()
