@@ -1,3 +1,7 @@
+function home_page(){
+    location.href = "/"
+};
+
 function product_page(){
     location.href = "/productInfo"
 };
