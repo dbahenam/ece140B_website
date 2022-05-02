@@ -7,7 +7,7 @@ from pyramid.response import FileResponse
 def index_page(req):
    return FileResponse("index.html")
 def product_page(req):
-   return FileResponse("/productInfo.html")
+   return FileResponse("productInfo.html")
 def kvp_page(req):
    return FileResponse("/kvp.html")
 
