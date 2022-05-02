@@ -9,7 +9,9 @@ def index_page(req):
 def product_page(req):
    return FileResponse("productInfo.html")
 def kvp_page(req):
-   return FileResponse("/kvp.html")
+   return FileResponse("kvp.html")
+def about_us_page(req):
+   return FileResponse("aboutUs.html")
 
 #Line below tells executor to start from here
 if __name__ == '__main__':
@@ -29,6 +31,11 @@ if __name__ == '__main__':
       config.add_route('kvp', '/kvp')
       # Directs the route to the function that can generate the view
       config.add_view(kvp_page, route_name='kvp')
+
+       # Adds different routes possible in the website
+      config.add_route('about_us', '/about_us')
+      # Directs the route to the function that can generate the view
+      config.add_view(about_us_page, route_name='about_us')
 
     #    # Create a route that handles server HTTP requests at: /photos/photo_id
     #    config.add_route('photos', '/photos/{photo_id}')
