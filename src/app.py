@@ -1,5 +1,4 @@
 #import all the necessary libraries
-from msilib.schema import File
 from wsgiref.simple_server import make_server
 from pyramid.config import Configurator
 from pyramid.response import FileResponse
