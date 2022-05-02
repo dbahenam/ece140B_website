@@ -7,5 +7,7 @@ function product_page(){
    console.log("Making a RESTful request to the server!")
 
     // fetch is a Javascript function that sends a request to a server
-    fetch(theURL);
+    fetch(theURL)
+    .then(response => response.text())
+    .then(data => console.log(data));
 };
