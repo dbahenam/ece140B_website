@@ -18,15 +18,14 @@ if __name__ == '__main__':
       config.add_route('home', '/')
       # Bind the view (defined by index_page) to the route named ‘home’
       config.add_view(index_page, route_name='home')
+
       # Adds different routes possible in the website
       config.add_route('product', '/productInfo')
-
       # Directs the route to the function that can generate the view
       config.add_view(product_page, route_name='product')
 
       # Adds different routes possible in the website
       config.add_route('kvp', '/kvp')
-
       # Directs the route to the function that can generate the view
       config.add_view(kvp_page, route_name='kvp')
 
