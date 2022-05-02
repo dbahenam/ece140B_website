@@ -7,9 +7,10 @@ from pyramid.response import FileResponse
 def index_page(req):
    return FileResponse("index.html")
 def product_page(req):
-   return FileResponse("productInfo.html")
+   return FileResponse("/productInfo.html")
 def kvp_page(req):
-   return FileResponse("kvp.html")
+   return FileResponse("/kvp.html")
+
 #Line below tells executor to start from here
 if __name__ == '__main__':
    with Configurator() as config:
