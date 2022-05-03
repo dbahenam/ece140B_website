@@ -14,6 +14,6 @@ function about_page(){
     location.href = "/about_us"
 }
 
-function product_page(){
+function project_page(){
     location.href = "/project"
 }
