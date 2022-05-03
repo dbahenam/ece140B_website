@@ -12,6 +12,8 @@ def kvp_page(req):
    return FileResponse("kvp.html")
 def about_us_page(req):
    return FileResponse("aboutUs.html")
+def project_page(req):
+   return FileResponse("project.html")
 
 #Line below tells executor to start from here
 if __name__ == '__main__':
@@ -32,10 +34,15 @@ if __name__ == '__main__':
       # Directs the route to the function that can generate the view
       config.add_view(kvp_page, route_name='kvp')
 
-       # Adds different routes possible in the website
+      # Adds different routes possible in the website
       config.add_route('about_us', '/about_us')
       # Directs the route to the function that can generate the view
       config.add_view(about_us_page, route_name='about_us')
+
+      # Adds different routes possible in the website
+      config.add_route('project', '/project')
+      # Directs the route to the function that can generate the view
+      config.add_view(project_page, route_name='project')
 
     #    # Create a route that handles server HTTP requests at: /photos/photo_id
     #    config.add_route('photos', '/photos/{photo_id}')

@@ -13,3 +13,7 @@ function kvp_page(){
 function about_page(){
     location.href = "/about_us"
 }
+
+function product_page(){
+    location.href = "/project"
+}
