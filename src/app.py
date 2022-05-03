@@ -43,9 +43,6 @@ if __name__ == '__main__':
       config.add_route('project', '/project')
       # Directs the route to the function that can generate the view
       config.add_view(project_page, route_name='project')
-
-    #    # Create a route that handles server HTTP requests at: /photos/photo_id
-    #    config.add_route('photos', '/photos/{photo_id}')
        
        # Add a static view
        # This command maps the folder “./public” to the URL “/”
@@ -55,5 +52,6 @@ if __name__ == '__main__':
 
        # Create an app with the configuration specified above
       app = config.make_wsgi_app()
+      
    server = make_server('0.0.0.0', 6000, app) # Start the application on port 6543
    server.serve_forever()
