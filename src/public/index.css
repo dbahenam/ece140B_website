@@ -1,5 +1,7 @@
 .body{
   background-image: url("140b_background.jpg");
+  background-size: cover;
+  background-color: red;
 }
 .column{
     float: left;

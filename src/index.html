@@ -2,23 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
     <title>Grocery Tracker</title>
-    <h1 class='home_header'>Grocery Tracker</h1>
 </head>
-<body>
-    <div class="nav">
-        <a onclick='home_page()'>Home</a>
-        <a onclick='product_page()'>Product</a>
-        <a onclick='kvp_page()'>KeyValueProposition</a>
-        <a onclick='about_page()'>About Us</a>
-    </div>
-   <div class="row">
-        <div class="column">
-            <h2>Product Page Update</h2>
-            <a onclick='project_page()'>See Our Product Page!</a>
-        </div>
-   </div>
+<body class="bg-dark">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-info navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand text-dark display-4">Grocery Tracker</a>
+                <button 
+                    class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu" >
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a onclick='about_page()' href="#kvp" class="text-decoration-underline nav-link text-dark fs-6">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="kvp_page()" href="#Product" class="text-decoration-underline nav-link text-dark fs-6">Key Value Proposition</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick='product_page()' href="#Team" class="text-decoration-underline nav-link text-dark fs-6">Our Product</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         <!-- Showcase -->
+        <section class="bg-dark text-light p-5 text-center text-sm-start">
+            <div class="container">
+                <div class = "d-sm-flex">
+                    <div>
+                        <h1>Keeping Track Of Your
+                            <span class="text-info">Groceries</span>
+                        </h1>
+                        <p> 
+                            Our product is here so you never have to worry about what you have in your fridge again!
+                        </p>
+                        <button onclick='product_page()' class="btn btn-primary btn-lg">Learn more about our product</button>
+                    </div>
+                    <img class="img-fluid w-50" src="grocery_shopping.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md"><!-- columns only on medium screens and up-->
+                        <div class="card text-dark bg-white text-center">
+                            <img src="empty_cart.svg" class = "card-img-top" alt="" style="height:300px;width:100%;">
+                            <div class="card-body" >
+                                <h5 class="card-title text-center">How our product works?</h5>
+                                <p class="card-text text-center">Learn more about the cool stuff behind the scenes</p>
+                                <a onclick=product_page() class="btn btn-primary">Our Product</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md"><!-- columns only on medium screens and up-->
+                        <div class="card text-dark bg-white text-center">
+                            <img src="adding_items.svg" class = "card-img-top" alt="" style="height:300px;width:100%;">
+                            <div class="card-body" >
+                                <h5 class="card-title text-center">IOS App</h5>
+                                <p class="card-text text-center">Track your items through our app!</p>
+                                <a onclick=team_page() class="btn btn-primary">Download</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md"><!-- columns only on medium screens and up-->
+                        <div class="card text-dark bg-white text-center">
+                            <img src="good_team.svg" class = "card-img-top" alt="" style="height:300px;width:100%;">
+                            <div class="card-body" >
+                                <h5 class="card-title text-center">Our Team</h5>
+                                <p class="card-text text-center">A team of UCSD students. Get to know us!</p>
+                                <a onclick=team_page() class="btn btn-primary">About Us</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
    <script type="text/javascript" src="rest.js"></script>
 </body>
 </html>
