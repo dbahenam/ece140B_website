@@ -14,7 +14,9 @@ def about_us_page(req):
    return FileResponse("aboutUs.html")
 def project_page(req):
    return FileResponse("project.html")
-
+def interactions_page(req):
+   return FileResponse("interactions.html")
+   
 #Line below tells executor to start from here
 if __name__ == '__main__':
    with Configurator() as config:
@@ -43,6 +45,11 @@ if __name__ == '__main__':
       config.add_route('project', '/project')
       # Directs the route to the function that can generate the view
       config.add_view(project_page, route_name='project')
+
+      # Adds different routes possible in the website
+      config.add_route('interactions', '/interactions')
+      # Directs the route to the function that can generate the view
+      config.add_view(interactions_page, route_name='interactions')
        
        # Add a static view
        # This command maps the folder “./public” to the URL “/”
