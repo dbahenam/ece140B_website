@@ -22,6 +22,6 @@ function interactions_page(){
     location.href = "/interactions"
 }
 
-function fvb(){
+function fvb_page(){
     location.href = "/fvb"
 }
