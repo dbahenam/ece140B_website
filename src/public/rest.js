@@ -17,3 +17,11 @@ function about_page(){
 function project_page(){
     location.href = "/project"
 }
+
+function interactions_page(){
+    locarion.href = "/interactions"
+}
+
+function fvb(){
+    locarion.href = "/fvb"
+}
