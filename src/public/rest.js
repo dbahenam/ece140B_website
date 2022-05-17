@@ -19,9 +19,9 @@ function project_page(){
 }
 
 function interactions_page(){
-    locarion.href = "/interactions"
+    location.href = "/interactions"
 }
 
 function fvb(){
-    locarion.href = "/fvb"
+    location.href = "/fvb"
 }
