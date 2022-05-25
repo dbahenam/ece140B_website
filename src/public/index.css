@@ -45,3 +45,9 @@ h1{
   .About{
     column-gap: 40px;
   }
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
