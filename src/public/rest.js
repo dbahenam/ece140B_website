@@ -25,3 +25,11 @@ function interactions_page(){
 function fvb_page(){
     location.href = "/fvb"
 }
+
+function costs_page(){
+    location.href = "/costs"
+}
+
+function revenue_page(){
+    location.href = "/revenue"
+}

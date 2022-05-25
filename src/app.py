@@ -18,6 +18,10 @@ def interactions_page(req):
    return FileResponse("interactions.html")
 def fvb_page(req):
    return FileResponse("fvb.html")
+def costs_page(req):
+   return FileResponse("costs.html")
+def revenue_page(req):
+   return FileResponse("revenue.html")
 
 #Line below tells executor to start from here
 if __name__ == '__main__':
@@ -57,6 +61,16 @@ if __name__ == '__main__':
       config.add_route('fvb', '/fvb')
       # Directs the route to the function that can generate the view
       config.add_view(fvb_page, route_name='fvb')
+
+      # Adds different routes possible in the website
+      config.add_route('costs', '/costs')
+      # Directs the route to the function that can generate the view
+      config.add_view(costs_page, route_name='costs')
+
+      # Adds different routes possible in the website
+      config.add_route('revenue', '/revenue')
+      # Directs the route to the function that can generate the view
+      config.add_view(revenue_page, route_name='revenue')
        
        # Add a static view
        # This command maps the folder “./public” to the URL “/”
