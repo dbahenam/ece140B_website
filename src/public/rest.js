@@ -33,3 +33,7 @@ function costs_page(){
 function revenue_page(){
     location.href = "/revenue"
 }
+
+function pivot_page(){
+    location.href = "/pivot"
+}
