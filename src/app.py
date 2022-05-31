@@ -22,6 +22,8 @@ def costs_page(req):
    return FileResponse("costs.html")
 def revenue_page(req):
    return FileResponse("revenue.html")
+def pivot_page(req):
+   return FileResponse("pivot.html")
 
 #Line below tells executor to start from here
 if __name__ == '__main__':
@@ -71,6 +73,11 @@ if __name__ == '__main__':
       config.add_route('revenue', '/revenue')
       # Directs the route to the function that can generate the view
       config.add_view(revenue_page, route_name='revenue')
+
+      # Adds different routes possible in the website
+      config.add_route('pivot', '/pivot')
+      # Directs the route to the function that can generate the view
+      config.add_view(pivot_page, route_name='pivot')
        
        # Add a static view
        # This command maps the folder “./public” to the URL “/”
